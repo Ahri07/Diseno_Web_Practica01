@@ -1,0 +1,206 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    background: url('../media/FonoWeb.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.maps-container {
+    text-align: center;
+    width: 1700px;
+    position: relative;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    position: absolute;
+    top: -15px;
+    right: 220px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+/* Título */
+.maps-title {
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: -40px;
+    color: white;
+}
+
+/* Grid de mapas */
+.map-grid {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+/* Mapas */
+.map-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Posicionamiento corregido */
+.map-card:nth-child(1) { 
+    grid-column: 1; 
+    grid-row: 1; 
+    align-self: start; /* Asegura que esté arriba */
+} /* Arriba izquierda */
+
+.map-card:nth-child(2) { 
+    grid-column: 1 / span 2; 
+    grid-row: 2; 
+    justify-self: center; 
+} /* Centro abajo */
+
+.map-card:nth-child(3) { 
+    grid-column: 2; 
+    grid-row: 1; 
+    align-self: start; /* Asegura que esté arriba */
+} /* Arriba derecha */
+
+
+.map-card:hover {
+    transform: scale(1.1);
+}
+
+.map-card img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Overlay de fondo */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* Popup de mapa */
+.map-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mostrar el popup */
+.map-popup.show {
+    display: flex;
+}
+
+.map-card span{
+    font-size: 20px;
+    color: white;
+    margin-top: 12px;
+}
+
+/* Contenido del popup */
+.popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 120px;
+}
+
+/* Fondo del mapa */
+.map-background {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.popup-left img{
+    width: 600px;
+    height: 500px;
+}
+
+.popup-right img{
+    margin-right: 68px;
+}
+
+
+
+/* Superposición de la imagen derecha sobre la izquierda */
+.popup-right {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Layout del mapa */
+.map-layout {
+    width: 350px;
+    border: 2px solid #00aaff;
+    border-radius: 5px;
+}
+
+/* Botón JUGAR */
+.play-btn {
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.play-btn:hover {
+    background-color: #d63434;
+}
+
+/* Botón de cerrar en el popup */
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}

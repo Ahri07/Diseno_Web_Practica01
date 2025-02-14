@@ -3,14 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Selección de Mapas</title>
+    <link rel="stylesheet" href="css/stylesmaps.css">
+    <script src="https://kit.fontawesome.com/04b2462f47.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>MAPAS</h1>
-    </header>
- 
-    
+
+    <div class="maps-container">
+        <button class="close-btn" id="closeMaps">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="maps-title">Mapas</h2>
+
+        <!-- Grid de mapas -->
+        <div class="map-grid">
+            <div class="map-card" data-map="bind">
+                <img src="media/Bind-Mapa.webp" alt="Bind">
+                <span>Bind</span>
+            </div>
+            <div class="map-card" data-map="split">
+                <img src="media/Split-Mapa.webp" alt="Split">
+                <span>Split</span>
+            </div>
+            <div class="map-card" data-map="ascent">
+                <img src="media/Heaven-Mapa.webp" alt="Ascent">
+                <span>Ascent</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay para oscurecer el fondo -->
+    <div class="overlay"></div>
+
+    <!-- Popup del mapa -->
+    <div class="map-popup">
+        <button class="close-popup"><i class="fa-solid fa-xmark"></i></button>
+        <div class="popup-content">
+            <div class="popup-left">
+                <img class="map-background" src="" alt="Mapa">
+            </div>
+            <div class="popup-right">
+                <img class="map-layout" src="" alt="Layout">
+            </div>
+        </div>
+        <button class="play-btn" id="playGame">JUGAR</button>
+    </div>
+
+    <script src="js/mapas.js"></script>
 </body>
 </html>
