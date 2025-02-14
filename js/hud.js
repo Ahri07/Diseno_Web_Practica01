@@ -11,17 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const minimapSizeSlider = document.getElementById("minimapSize");
     const minimapSizeValue = document.getElementById("minimapSizeValue");
 
-    // Cerrar la ventana de HUD y volver a la pantalla principal
     closeBtn.addEventListener("click", () => {
         window.location.href = "mapas.html";
     });
 
-    // Ir a la siguiente sección con el botón de Play
     volverBtn.addEventListener("click", () => {
         window.location.href = "index.html";
     });
 
-    // Mostrar valores en tiempo real
     sensitivitySlider.addEventListener("input", () => {
         sensitivityValue.textContent = sensitivitySlider.value;
     });

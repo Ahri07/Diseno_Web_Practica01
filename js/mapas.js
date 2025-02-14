@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("closeMaps");
     const playBtn = document.getElementById("playGame");
 
-    // Datos de los mapas
+
     const mapsData = {
         bind: {
             background: "media/Bind-Mapa.webp",
@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Mostrar popup con la información del mapa seleccionado
     mapCards.forEach(card => {
         card.addEventListener("click", () => {
             const map = card.getAttribute("data-map");
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Cerrar popup
+
     closePopupButtons.forEach(button => {
         button.addEventListener("click", () => {
             popup.classList.remove("show");
@@ -49,12 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Cerrar con el botón de cerrar
+
     closeBtn.addEventListener("click", () => {
         window.location.href = "agentes.html";
     });
 
-    // Ir a la siguiente página cuando se presiona JUGAR
+   
     playBtn.addEventListener("click", () => {
         window.location.href = "hud.html";
     });

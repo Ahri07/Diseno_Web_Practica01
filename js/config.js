@@ -4,17 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const volumeSlider = document.getElementById("volume");
     const volumeValue = document.getElementById("volumeValue");
 
-    // Cerrar la ventana de configuración
+
     closeBtn.addEventListener("click", () => {
-        window.location.href = "index.html"; // Simula volver a la pantalla principal
+        window.location.href = "index.html"; 
     });
 
-        // Cerrar la ventana de configuración
         playBtn.addEventListener("click", () => {
-            window.location.href = "agentes.html"; // Simula volver a la pantalla principal
+            window.location.href = "agentes.html"; 
         });
 
-    // Mostrar valor del volumen en tiempo real
     volumeSlider.addEventListener("input", () => {
         volumeValue.textContent = volumeSlider.value;
     });

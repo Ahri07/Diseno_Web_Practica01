@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Fondo general */
+
 body {
     background: url('../media/FonoWeb.webp') no-repeat center center/cover;
     height: 100vh;
@@ -15,14 +15,14 @@ body {
     align-items: center;
 }
 
-/* Contenedor principal */
+
 .maps-container {
     text-align: center;
     width: 1700px;
     position: relative;
 }
 
-/* Botón de cerrar */
+
 .close-btn {
     position: absolute;
     top: -15px;
@@ -34,7 +34,7 @@ body {
     cursor: pointer;
 }
 
-/* Título */
+
 .maps-title {
     font-size: 62px;
     text-align: center;
@@ -43,7 +43,7 @@ body {
     color: white;
 }
 
-/* Grid de mapas */
+
 .map-grid {
     display: flex;
     justify-content: center;
@@ -51,7 +51,6 @@ body {
     margin-top: 30px;
 }
 
-/* Mapas */
 .map-card {
     display: flex;
     flex-direction: column;
@@ -59,25 +58,6 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
-
-/* Posicionamiento corregido */
-.map-card:nth-child(1) { 
-    grid-column: 1; 
-    grid-row: 1; 
-    align-self: start; /* Asegura que esté arriba */
-} /* Arriba izquierda */
-
-.map-card:nth-child(2) { 
-    grid-column: 1 / span 2; 
-    grid-row: 2; 
-    justify-self: center; 
-} /* Centro abajo */
-
-.map-card:nth-child(3) { 
-    grid-column: 2; 
-    grid-row: 1; 
-    align-self: start; /* Asegura que esté arriba */
-} /* Arriba derecha */
 
 
 .map-card:hover {
@@ -91,7 +71,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Overlay de fondo */
 .overlay {
     display: none;
     position: fixed;
@@ -107,7 +86,7 @@ body {
     display: block;
 }
 
-/* Popup de mapa */
+
 .map-popup {
     display: none;
     position: fixed;
@@ -123,7 +102,6 @@ body {
     align-items: center;
 }
 
-/* Mostrar el popup */
 .map-popup.show {
     display: flex;
 }
@@ -134,7 +112,7 @@ body {
     margin-top: 12px;
 }
 
-/* Contenido del popup */
+
 .popup-content {
     display: flex;
     justify-content: center;
@@ -143,7 +121,7 @@ body {
     margin-top: 120px;
 }
 
-/* Fondo del mapa */
+
 .map-background {
     width: 100%;
     border-radius: 10px;
@@ -160,8 +138,6 @@ body {
 }
 
 
-
-/* Superposición de la imagen derecha sobre la izquierda */
 .popup-right {
     position: absolute;
     right: 10%;
@@ -169,14 +145,14 @@ body {
     transform: translateY(-50%);
 }
 
-/* Layout del mapa */
+
 .map-layout {
     width: 350px;
     border: 2px solid #00aaff;
     border-radius: 5px;
 }
 
-/* Botón JUGAR */
+
 .play-btn {
     background-color: #ff4d4d;
     color: white;
@@ -193,7 +169,7 @@ body {
     background-color: #d63434;
 }
 
-/* Botón de cerrar en el popup */
+
 .close-popup {
     position: absolute;
     top: 15px;

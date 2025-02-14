@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("closeAgents");
     const playBtn = document.getElementById("playButton");
 
-    // Datos de los agentes
+
     const agentsData = {
         brimstone: {
             name: "Brimstone",
             image: "media/Brim.webp",
-            role: "media/habilities/Duelista.png",
+            role: "media/habilities/Controlador.png",
             description: "De origen estadounidense, Brimstone cuenta con un arsenal de órbita que garantiza que su equipo siempre vaya por delante. Su capacidad para aportar herramientas de utilidad de una forma segura y precisa lo convierte en un comandante de primera línea sin igual.",
             abilities: [
                 { name: "INCENDIARIO", icon: "media/habilities/HBri1.png" },
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Viper",
             image: "media/Viper.webp",
             role: "media/habilities/Controlador.png",
-            description: "Nacido en el eterno invierno de la tundra rusa, Sova destaca a la hora de localizar, perseguir y eliminar a los enemigos con una eficiencia y una precisión inclementes. Su arco personalizado junto con su sobrenatural capacidad de rastreamiento hacen que sea imposible escapar.",
+            description: "Viper es una química estadounidense con un amplio arsenal de dispositivos venenosos que le sirven para tomar el control del campo de batalla y cegar a los enemigos. Si las toxinas no acaban con su presa, la paranoia la rematará.",
             abilities: [
                 { name: "NUBE VENENOSA", icon: "media/habilities/HV1.png" },
                 { name: "CORTINA DE HUMO", icon: "media/habilities/HV2.png" },
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Mostrar la ventana emergente con los datos del personaje
+
     characterCards.forEach(card => {
         card.addEventListener("click", () => {
             const agent = card.getAttribute("data-agent");
@@ -180,15 +180,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-
-        // Cerrar la selección de agentes y volver a la página principal
         closeBtn.addEventListener("click", () => {
             window.location.href = "configuracion.html";
         });
     
-        // Ir a la siguiente página cuando se presiona PLAY
         playBtn.addEventListener("click", () => {
-            window.location.href = "mapas.html"; // Cambia esto según la siguiente página
+            window.location.href = "mapas.html"; 
         });
     
     

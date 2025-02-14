@@ -57,7 +57,7 @@ body {
     margin-right: 280px;
 }
 
-/* Grid de personajes */
+
 .character-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -69,15 +69,15 @@ body {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out; /* Transición suave */
+    transition: transform 0.2s ease-in-out; 
 }
 
-/* Escalar el personaje cuando el cursor pase por encima */
+
 .character-card:hover {
     transform: scale(1.1);
 }
 
-/* Elimina el fondo transparente */
+
 .character-card img {
     width: 140px;
     height: 140px;
@@ -86,7 +86,7 @@ body {
 }
 
 
-/* Botón de PLAY */
+
 .play-btn {
     background-color: #ff4d4d;
     color: white;
@@ -106,7 +106,6 @@ body {
     background-color: #d63434;
 }
 
-/* Ventana emergente */
 
 .overlay {
     display: none;
@@ -115,11 +114,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Oscuro semi-transparente */
-    z-index: 3; /* Detrás del popup */
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 3; 
 }
 
-/* Mostrar el overlay cuando el popup está abierto */
+
 .overlay.show {
     display: block;
 }
@@ -146,7 +145,7 @@ body {
     opacity: 1;
 }
 
-/* Contenido de la ventana emergente */
+
 .popup-content {
     display: flex;
     justify-content: space-between;
@@ -156,12 +155,12 @@ body {
 }
 
 
-/* Imagen del agente */
+
 .popup-left img {
     width: 250px;
 }
 
-/* Información del agente */
+
 .popup-center {
     text-align: center;
     flex: 1;
@@ -173,7 +172,7 @@ body {
     line-height: 1.5;
 }
 
-/* Sección de habilidades */
+
 .popup-right {
     margin-top: 50px;
     display: flex;
@@ -181,7 +180,7 @@ body {
     gap: 10px;
 }
 
-/* Estilo habilidades */
+
 .ability {
     display: flex;
     align-items: center;
@@ -192,7 +191,7 @@ body {
     width: 40px;
 }
 
-/* Botón de selección centrado ABAJO */
+
 .select-character {
     background-color: #ff4d4d;
     color: white;
@@ -201,9 +200,9 @@ body {
     border: none;
     cursor: pointer;
     text-align: center;
-    margin-top: 30px; /* Espacio suficiente para que no quede pegado */
+    margin-top: 30px; 
     align-self: center;
-    width: 250px; /* Tamaño adecuado */
+    width: 250px; 
     border-radius: 10px;
 }
 
@@ -213,8 +212,8 @@ body {
 
 .close-popup {
     position: absolute;
-    top: 15px; /* Ajuste para la parte superior */
-    right: 20px; /* Ajuste para la parte derecha */
+    top: 15px; 
+    right: 20px; 
     background: none;
     color: black;
     border: none;
