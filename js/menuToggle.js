@@ -11,3 +11,9 @@ btnOpenMenu.addEventListener("click", function() {
 btnCloseMenu.addEventListener("click", function() {
     menu.classList.remove("show-menu");
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("enterB").addEventListener("click", function() {
+        window.location.href = "configuracion.html"; // Redirige a pagina.html
+    });
+});
