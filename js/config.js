@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Cerrar la ventana de configuración
         playBtn.addEventListener("click", () => {
-            window.location.href = "agentes.html"; // Simula volver a la pantalla principal
+            window.location.href = "hud.html"; // Simula volver a la pantalla principal
         });
 
     // Mostrar valor del volumen en tiempo real

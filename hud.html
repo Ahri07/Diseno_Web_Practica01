@@ -3,62 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Configuración HUD</title>
+    <link rel="stylesheet" href="css/styleshud.css">
+    <script src="https://kit.fontawesome.com/04b2462f47.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>HUD</h1>
-    </header>
-    
-    <section id=... class=...>
-        <h2>Idiomas</h2>
 
-        
-        <button id="play-btn">ENTER NOW</button>
+    <div class="hud-container">
+        <button class="close-btn" id="closeHUD">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="hud-title">HUD</h2>
 
+        <div class="hud-option">
+            <span>Idioma</span>
+            <select id="language">
+                <option>Español</option>
+                <option>Inglés</option>
+                <option>Francés</option>
+                <option>Alemán</option>
+                <option>Japonés</option>
+            </select>
+        </div>
 
-    </section>
-    
-    <section id=... class=...>
-        <h2>Color de los enemigos</h2>
+        <div class="hud-option">
+            <span>Color de los enemigos</span>
+            <select id="enemyColor">
+                <option>Rojo</option>
+                <option>Azul</option>
+                <option>Verde</option>
+                <option>Amarillo</option>
+            </select>
+        </div>
 
+        <div class="hud-slider">
+            <label for="sensitivity">Sensibilidad</label>
+            <div class="slider-wrapper">
+                <input type="range" id="sensitivity" min="0" max="100" value="50">
+                <span id="sensitivityValue">50</span>
+            </div>
+        </div>
 
-        <p>Demostrad vuestro estilo y experiencia en un escenario competitivo internacional. Dispondréis de 13 rondas para atacar y defender vuestro lado mediante un manejo de armas preciso y habilidades tácticas. Y, con una vida por ronda, tendréis que pensar más rápido que vuestros oponentes si queréis sobrevivir. Enfrentaos a vuestros enemigos en los modos competitivo y normal, además de en Combate a muerte y Fiebre de la Spike.</p>
-        <img src="" alt="Personaje Valorant">
+        <div class="hud-slider">
+            <label for="mapRotate">Mapa rotable</label>
+            <div class="slider-wrapper">
+                <input type="range" id="mapRotate" min="0" max="100" value="50">
+                <span id="mapRotateValue">50</span>
+            </div>
+        </div>
 
+        <div class="hud-slider">
+            <label for="minimapSize">Tamaño del minimapa</label>
+            <div class="slider-wrapper">
+                <input type="range" id="minimapSize" min="0" max="100" value="50">
+                <span id="minimapSizeValue">50</span>
+            </div>
+        </div>
 
-    </section>
-    
-    <section id=... class=...>
-        <h2>Sensibilidad</h2>
+        <button class="play-btn" id="playHUD">VOLVER</button>
+    </div>
 
-
-        <p>Aparte de las armas y las balas, tendréis a un agente con habilidades letales, adaptables y ágiles que os brindarán oportunidades para demostrar vuestro dominio de las armas. No hay dos agentes iguales, del mismo modo que no hay momentos destacados idénticos</p>
-        <img src="" alt="Agente Valorant">
-
-        
-    </section>
-
-    <section id=... class=...>
-        <h2>Mapa rotable</h2>
-
-
-        <p>Demostrad vuestro estilo y experiencia en un escenario competitivo internacional. Dispondréis de 13 rondas para atacar y defender vuestro lado mediante un manejo de armas preciso y habilidades tácticas. Y, con una vida por ronda, tendréis que pensar más rápido que vuestros oponentes si queréis sobrevivir. Enfrentaos a vuestros enemigos en los modos competitivo y normal, además de en Combate a muerte y Fiebre de la Spike.</p>
-        <img src="" alt="Personaje Valorant">
-
-
-    </section>
-    
-    <section id=... class=...>
-        <h2>Tamaño del minimapa</h2>
-
-
-        <p>Aparte de las armas y las balas, tendréis a un agente con habilidades letales, adaptables y ágiles que os brindarán oportunidades para demostrar vuestro dominio de las armas. No hay dos agentes iguales, del mismo modo que no hay momentos destacados idénticos</p>
-        <img src="" alt="Agente Valorant">
-
-        
-    </section>
-
+    <script src="js/hud.js"></script>
 </body>
 </html>
