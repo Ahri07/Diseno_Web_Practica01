@@ -3,14 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valorant</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Selección de Agentes</title>
+    <link rel="stylesheet" href="css/stylesagentes.css">
+    <script src="https://kit.fontawesome.com/04b2462f47.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>AGENTES</h1>
-    </header>
- 
-    
+
+    <div class="agents-container">
+        <button class="close-btn" id="closeAgents">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2 class="agents-title">Agentes</h2>
+
+        <div class="character-grid">
+            <div class="character-card" data-agent="brimstone">
+                <img src="media/Brim-Agente.webp" alt="Brimstone">
+                <span>Brimstone</span>
+            </div>
+            <div class="character-card" data-agent="cypher">
+                <img src="media/Cypher-Agente.webp" alt="Cypher">
+                <span>Cypher</span>
+            </div>
+            <div class="character-card" data-agent="jett">
+                <img src="media/Jett-Agente.webp" alt="Jett">
+                <span>Jett</span>
+            </div>
+            <div class="character-card" data-agent="omen">
+                <img src="media/Omen-Agente.webp" alt="Omen">
+                <span>Omen</span>
+            </div>
+            <div class="character-card" data-agent="phoenix">
+                <img src="media/Phoenix-Agente.webp" alt="Phoenix">
+                <span>Phoenix</span>
+            </div>
+            <div class="character-card" data-agent="sage">
+                <img src="media/Sage-Agente.webp" alt="Sage">
+                <span>Sage</span>
+            </div>
+            <div class="character-card" data-agent="sova">
+                <img src="media/Sova-Agente.webp" alt="Sova">
+                <span>Sova</span>
+            </div>
+            <div class="character-card" data-agent="viper">
+                <img src="media/Viper-Agente.webp" alt="Viper">
+                <span>Viper</span>
+            </div>
+            <div class="character-card" data-agent="breach">
+                <img src="media/Breach-Agente.webp" alt="Breach">
+                <span>Breach</span>
+            </div>
+            <div class="character-card" data-agent="raze">
+                <img src="media/Raze-Agente.webp" alt="Raze">
+                <span>Raze</span>
+            </div>
+        </div>
+
+        <button class="play-btn" id="playButton">PLAY</button>
+    </div>
+
+    <!-- Fondo oscuro para bloquear interacción -->
+    <div class="overlay"></div>
+
+    <!-- Ventana emergente de agente -->
+    <div class="character-popup">
+        <button class="close-popup"><i class="fa-solid fa-xmark"></i></button>
+        <div class="popup-content">
+            <div class="popup-left">
+                <img class="agent-image" src="" alt="Agente">
+            </div>
+            <div class="popup-center">
+                <h2 class="agent-name"></h2>
+                <img class="agent-role" src="" alt="Rol">
+                <p class="agent-description"></p>
+            </div>
+            <div class="popup-right">
+                <div class="ability">
+                    <img src="" class="ability-icon">
+                    <p class="ability-name"></p>
+                </div>
+                <div class="ability">
+                    <img src="" class="ability-icon">
+                    <p class="ability-name"></p>
+                </div>
+                <div class="ability">
+                    <img src="" class="ability-icon">
+                    <p class="ability-name"></p>
+                </div>
+                <div class="ability">
+                    <img src="" class="ability-icon">
+                    <p class="ability-name"></p>
+                </div>
+            </div>
+        </div>
+        <button class="select-character">SELECCIONAR</button>
+    </div>
+
+    <script src="js/agentes.js"></script>
 </body>
 </html>
